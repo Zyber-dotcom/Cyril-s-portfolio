@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cyril Mark Mante — BSIT Student & Aspiring Software Developer from Davao Del Norte State College. Building practical systems and web applications." />
+  <meta name="keywords" content="Cyril Mark Mante, BSIT, Software Developer, Java, PHP, JavaScript, MySQL, Portfolio" />
+  <meta name="author" content="Cyril Mark Mante" />
+  <meta property="og:title" content="Cyril Mark Mante | Portfolio" />
+  <meta property="og:description" content="BSIT Student & Aspiring Software Developer" />
+  <meta property="og:type" content="website" />
+  <title>Cyril Mark Mante | Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <!-- Brand / Logo -->
+      <a class="navbar-brand" href="#hero">
+        <!-- Uses the same photo as the hero card; replace "your-photo.jpg" with your filename -->
+        <img class="brand-photo" src="profile-img.jpeg" alt="Cyril Mark Mante" />
+        <span class="brand-name">Cyril Mark</span>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-inner">
+      <!-- Decorative large background text -->
+      <span class="hero-bg-text" aria-hidden="true">DEV</span>
+
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-8">
+          <!-- Label -->
+          <p class="hero-label">
+            <span class="label-dot"></span>
+            Available for Internships &amp; Collaboration
+          </p>
+
+          <!-- Headline -->
+          <h1 class="hero-headline">
+            BSIT Student &amp;<br />
+            <span class="accent">Aspiring</span><br />
+            Software Developer
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            Building practical systems and web applications through continuous learning and innovation.
+          </p>
+
+          <!-- CTA buttons -->
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary-custom">
+              View Projects <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-ghost-custom">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero card / visual -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+          <div class="hero-card">
+            <!-- Replace "your-photo.jpg" with your actual image filename -->
+            <div class="hero-card-avatar">
+              <img id="heroPhoto" src="profile-img.jpeg" alt="Cyril Mark Mante" />
+            </div>
+            <p class="hero-card-name">Cyril Mark Mante</p>
+            <p class="hero-card-title">BSIT Student</p>
+            <div class="hero-card-divider"></div>
+            <div class="hero-card-tags">
+              <span class="tag">Java</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-5 align-items-start mt-2">
+        <!-- Left: intro text -->
+        <div class="col-lg-6">
+          <p class="about-intro">
+            I am a <strong>Bachelor of Science in Information Technology</strong> student passionate about software development, web technologies, and database systems. I enjoy creating applications that solve real-world problems while continuously improving my programming and problem-solving skills.
+          </p>
+          <p class="about-body">
+            Studying at <strong>Davao Del Norte State College</strong>, I have built hands-on experience developing academic and personal projects using Java, PHP, JavaScript, Bootstrap, and MySQL. I enjoy transforming ideas into functional systems and continuously expanding my technical knowledge.
+          </p>
+
+          <!-- Career Goals -->
+          <h3 class="sub-heading mt-4">Career Goals</h3>
+          <ul class="goal-list">
+            <li><i class="fa-solid fa-chevron-right accent-icon"></i> Become a professional software developer</li>
+            <li><i class="fa-solid fa-chevron-right accent-icon"></i> Gain expertise in full-stack development</li>
+            <li><i class="fa-solid fa-chevron-right accent-icon"></i> Build systems that solve real-world problems</li>
+            <li><i class="fa-solid fa-chevron-right accent-icon"></i> Continuously learn emerging technologies</li>
+          </ul>
+        </div>
+
+        <!-- Right: strengths -->
+        <div class="col-lg-6">
+          <h3 class="sub-heading">Core Strengths</h3>
+          <div class="row g-3 mt-1">
+            <div class="col-6">
+              <div class="strength-card">
+                <i class="fa-solid fa-brain"></i>
+                <p>Problem-Solving Mindset</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="strength-card">
+                <i class="fa-solid fa-book-open"></i>
+                <p>Willingness to Learn</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="strength-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Attention to Detail</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="strength-card">
+                <i class="fa-solid fa-shuffle"></i>
+                <p>Adaptability</p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="strength-card">
+                <i class="fa-solid fa-microchip"></i>
+                <p>Passion for Technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+
+        <!-- Programming Languages -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-java"></i> Java</li>
+              <li><i class="fa-brands fa-php"></i> PHP</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-globe"></i>
+              <h3>Web Technologies</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-html5"></i> HTML5</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+              <li><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Database</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-server"></i> MySQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tools & Software -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-wrench"></i>
+              <h3>Tools &amp; Software</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-file-code"></i> Visual Studio Code</li>
+              <li><i class="fa-solid fa-cube"></i> NetBeans</li>
+              <li><i class="fa-solid fa-server"></i> XAMPP</li>
+              <li><i class="fa-brands fa-github"></i> GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="col-md-6 col-lg-8">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="soft-skill-tags">
+              <span class="soft-tag">Problem Solving</span>
+              <span class="soft-tag">Teamwork</span>
+              <span class="soft-tag">Communication</span>
+              <span class="soft-tag">Adaptability</span>
+              <span class="soft-tag">Time Management</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="col-lg-8">
+          <div class="edu-card">
+            <!-- Timeline dot -->
+            <div class="edu-timeline-dot"></div>
+
+            <div class="edu-card-body">
+              <div class="edu-year-badge">2023 — 2028</div>
+              <h3 class="edu-degree">Bachelor of Science in Information Technology</h3>
+              <p class="edu-school">
+                <i class="fa-solid fa-school me-2"></i>
+                Davao Del Norte State College
+              </p>
+              <p class="edu-location">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Davao Del Norte, Philippines
+              </p>
+
+              <div class="edu-highlights mt-3">
+                <div class="edu-highlight-item">
+                  <span class="highlight-label">Started</span>
+                  <span class="highlight-value">2023</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <span class="highlight-label">Expected Graduation</span>
+                  <span class="highlight-value">2028</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <span class="highlight-label">Program</span>
+                  <span class="highlight-value">BSIT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+
+        <!-- Project 1: Recipe Manager -->
+        <div class="col-lg-6">
+          <article class="project-card">
+            <!-- Card top accent bar -->
+            <div class="project-accent-bar"></div>
+
+            <div class="project-card-body">
+              <!-- Number label -->
+              <span class="project-number">01</span>
+              <h3 class="project-title">Recipe Manager System</h3>
+              <p class="project-desc">
+                A recipe management system that allows users to organize, manage, and follow cooking procedures in a structured sequence. The system helps users maintain proper cooking workflows and recipe organization.
+              </p>
+
+              <!-- Tech stack -->
+              <div class="project-tech">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+
+              <!-- Features -->
+              <h4 class="features-label">Key Features</h4>
+              <ul class="features-list">
+                <li><i class="fa-solid fa-check"></i> Recipe Management</li>
+                <li><i class="fa-solid fa-check"></i> Ingredient Organization</li>
+                <li><i class="fa-solid fa-check"></i> Step-by-Step Cooking Procedures</li>
+                <li><i class="fa-solid fa-check"></i> Database Storage</li>
+                <li><i class="fa-solid fa-check"></i> User-Friendly Interface</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2: Clinic Appointment -->
+        <div class="col-lg-6">
+          <article class="project-card">
+            <div class="project-accent-bar"></div>
+
+            <div class="project-card-body">
+              <span class="project-number">02</span>
+              <h3 class="project-title">Clinic Appointment System</h3>
+              <p class="project-desc">
+                A web-based clinic appointment management system that allows users to schedule and manage appointments efficiently, with secure user authentication and a clean management interface.
+              </p>
+
+              <!-- Tech stack -->
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+
+              <!-- Features -->
+              <h4 class="features-label">Key Features</h4>
+              <ul class="features-list">
+                <li><i class="fa-solid fa-check"></i> User Registration</li>
+                <li><i class="fa-solid fa-check"></i> Login System</li>
+                <li><i class="fa-solid fa-check"></i> Appointment Scheduling</li>
+                <li><i class="fa-solid fa-check"></i> Appointment Management</li>
+                <li><i class="fa-solid fa-check"></i> Database Integration</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="row g-5 mt-2 align-items-start">
+
+        <!-- Left: contact info -->
+        <div class="col-lg-5">
+          <p class="contact-intro">
+            I'm currently open to internship opportunities, collaborative academic projects, and freelance work. Feel free to reach out — I'd love to connect!
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:cyrilmarkmante222@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">cyrilmarkmante222@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:09505000874" class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">09505000874</span>
+              </div>
+            </a>
+            <div class="contact-item non-link">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-detail">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Bunawan, Davao City, Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="social-links mt-4">
+            <a href="https://github.com/Zyber-dotcom" target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.facebook.com/zyre.nexus.246" target="_blank" rel="noopener noreferrer"
+               class="social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="col-lg-7">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" name="name" class="form-control-custom"
+                           placeholder="Your Name" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" class="form-control-custom"
+                           placeholder="your@email.com" required />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" name="subject" class="form-control-custom"
+                           placeholder="What's this about?" required />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" class="form-control-custom"
+                              rows="5" placeholder="Write your message here..." required></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100">
+                    Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                  <div id="formFeedback" class="form-feedback mt-3" role="alert" aria-live="polite"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="footer-photo" src="profile-img.jpeg" alt="Cyril Mark Mante" />
+          <span class="footer-name">Cyril Mark Mante</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span> Cyril Mark Mante. All rights reserved.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/Zyber-dotcom" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/zyre.nexus.246" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="mailto:cyrilmarkmante222@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
